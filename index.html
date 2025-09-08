@@ -825,7 +825,7 @@ function saveDataAndGoToStep4() {
         // 전송할 데이터 디버깅 출력
         console.log('=== 전송할 데이터 확인 ===');
         console.log('타임스탬프:', timestamp);
-        console.log('회사명:', company);
+        console.log('소속 기관:', company);
         console.log('부서명:', department);
         console.log('성명:', name);
         console.log('직무 스트레스:', jobScore);
@@ -838,7 +838,7 @@ function saveDataAndGoToStep4() {
         // URL 파라미터 구성 (한글 인코딩 강화)
         var params = [];
         params.push('timestamp=' + encodeURIComponent(timestamp));
-        params.push('회사명=' + encodeURIComponent(company));
+        params.push('소속 기관=' + encodeURIComponent(company));
         params.push('부서명=' + encodeURIComponent(department));
         params.push('성명=' + encodeURIComponent(name));
         params.push('직무스트레스점수=' + encodeURIComponent(jobScore));
